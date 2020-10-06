@@ -16,7 +16,7 @@
 <body>
     <header id="header">
         <nav id="nav-bar">
-            <ul>
+            <ul class="nav-ul">
                 <li class="nav-link"><a style="color: black;" href="./index.html">
                 <img id="header-img" src="images/Skull.png" alt="Skull logo">Haloween Costume Shop</a></li>
                 <li class="nav-link"><a href="./bestSellers.html">Best Sellers</a></li>
@@ -26,7 +26,17 @@
         </nav>
     </header>
 
-    <br><br><br>
+
+
+    <br><br>
+    <div class="secondBar">
+      <img class="barImages m-2" src="images/CartIcon.png">
+      <a class="m-0 p-1 barText" href="#">Your orders</a>
+      <img class="barFlag m-2" src="images/mexicoIcon.png">
+      <a class="m-0 p-1 barText" href="#">Location</a>
+      <img class="barImages m-2" src="images/KeyIcon.png">
+      <a class="m-0 p-1 barText" href="#">Sign in</a>
+    </div>
     <h1 style="text-align: center;">Spooky Costume Shop</h1>
 
     <div class="w3-content w3-display-container">
@@ -77,26 +87,47 @@
         }
         </script>
 
-        <br><br>
+        <div class="cardElement">
+          <div class="cardContent">
+            <div class="cardText">
 
-        <div class="h2Titles">
-            <h2>DIY!</h2>
-            <h2>Best Sellers!</h2>
+              <div class="cardElement2">
+                <div class="cardContent">
+                  <div class="cardText">
+                    <img class="cardImages" src="images/teenTitans.jpg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardElement2">
+                <div class="cardContent">
+                  <div class="cardText">
+                    <img class="cardImages" src="images/teenTitans.jpg">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
 
-    <div class="h2Images">
-      <iframe width="800" height="720"
-          src="https://www.youtube.com/embed/aNTcgVvXCwI">
-      </iframe>
-      <img src="images/Barnacleboy.jpg" style="width:25%">
-    </div>
+      <div class="h2Titles">
+        <h2>DIY!</h2>
+        <iframe width="1280" height="720"
+            src="https://www.youtube.com/embed/aNTcgVvXCwI">
+        </iframe>
+      </div>
+    <br>
 
-    <div class="Form">
+    <div class="Form footerBar">
         <form id="form"></form>
+            <label class ="w-25 m-4 "for="name"><br>Subscribe for updates!</label>
             <input class="w-25 m-4"type="text" id="name" placeholder="Your name:" required>
             <input class="w-25 m-4"type="email" id="email" placeholder="Email:" required>
             <input class="btn btn-warning m-4 "type="submit" id="submit" value="Submit"> 
         </form>
     </div>
+
 </body>
 </html>

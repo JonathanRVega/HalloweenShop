@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Costume Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a style="color: black;" href="./index.html">
+                <img id="header-img" src="images/Skull.png" alt="Skull logo">Haloween Costume Shop</a></li>
+                <li class="nav-link"><a href="./bestSellers.html">Best Sellers</a></li>
+                <li class="nav-link"><a href="./forKids.html">For Kids</a></li>
+                <li class="nav-link"><a href="./forAdults.html">For adults</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br>
+    <h1 style="text-align: center;">Spooky Costume Shop</h1>
+
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <img src="images/joker.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          For him
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="images/Harley.jpg" style="width:100%">
+        <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+          For her
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="images/kidos.jpg" style="width:100%">
+        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+          For everyone
+        </div>
+      </div>
+      
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+        <br><br>
+
+        <div class="h2Titles">
+            <h2>DIY!</h2>
+            <h2>Best Sellers!</h2>
+        </div>
+
+    <div class="h2Images">
+      <iframe width="800" height="720"
+          src="https://www.youtube.com/embed/aNTcgVvXCwI">
+      </iframe>
+      <img src="images/Barnacleboy.jpg" style="width:25%">
+    </div>
+
+    <div class="Form">
+        <form id="form"></form>
+            <input class="w-25 m-4"type="text" id="name" placeholder="Your name:" required>
+            <input class="w-25 m-4"type="email" id="email" placeholder="Email:" required>
+            <input class="btn btn-warning m-4 "type="submit" id="submit" value="Submit"> 
+        </form>
+    </div>
+</body>
+</html>
